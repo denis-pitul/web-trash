@@ -1,0 +1,9 @@
+{% if entries_list %}
+        <ul>
+                {% for entry in entries_list %}
+                <li><a href="/log/{{ entry.id }}/">{{ entry.date }}</a></li>
+                {% endfor %}
+        </ul>
+{% else %}
+        <p>No entries found.</p>
+{% endif %}
