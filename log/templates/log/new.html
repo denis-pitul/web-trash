@@ -1,0 +1,8 @@
+<h1>Add Entry...</h1>
+
+<form action="{% url 'add' %}" method=post>
+        {% csrf_token %}
+        <textarea name="text" style="width: 720px; height: 120px"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+</form>
